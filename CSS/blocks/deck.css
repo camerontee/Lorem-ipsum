@@ -1,0 +1,17 @@
+.deck {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.deck--title {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 60px;
+  margin-bottom: 20px;
+  color: var(--purple);
+}
+
+.deck--description {
+  font-size: 26px;
+  line-height: 40px;
+}

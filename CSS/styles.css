@@ -1,0 +1,65 @@
+@import 'globals/reset.css';
+@import 'globals/colors.css';
+@import 'globals/typography.css';
+@import 'globals/layout.css';
+
+
+@import 'blocks/header.css';
+@import 'blocks/deck.css';
+@import 'blocks/hero.css';
+@import 'blocks/main-content.css';
+@import 'blocks/section-one.css';
+@import 'blocks/footer.css';
+@import 'blocks/form.css';
+
+.content-box {
+  height: 250px;
+  width: 33.33%;
+  display: inline-block;
+  color: white;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+.content-box:hover {
+  filter: brightness(120%);
+}
+
+.content-left {
+  float: left;
+  background-color: #90BFDB;
+}
+
+.content-center {
+  background-color: #5c5cd6;
+}
+
+.content-right {
+  float: right;
+  background-color: #00394d;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #2C5662;
+  margin-bottom: 10px;
+}
+
+.para-1 {
+  padding-bottom: 30px;
+}
+
+.para-break {
+  height: 500px;
+  transition: filter 500ms linear;
+}
+
+.para-break:hover {
+  filter: blur(2px);
+  transition: filter 500ms linear;
+}
+
+.para-2 {
+  padding-top: 30px;
+}

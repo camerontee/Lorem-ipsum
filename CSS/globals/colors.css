@@ -1,0 +1,12 @@
+:scope {
+  --white: #ffffff;
+  --paper: ;
+  --green: #02a21f;
+  --purple: #714988;
+  --light-blue: #eef4fb;
+
+}
+
+body {
+  background-image: url("../../images/page-background.png");
+}

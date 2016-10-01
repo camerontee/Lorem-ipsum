@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Experiment 2</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans:400,800" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="container">
+                    <span class="header__logo"><a href="index.html">Experiment 2</a></span>
+
+                    <nav id="navigation" class="header__navigation">
+                        <ul class="header__page-list">
+                            <li class="header__page-item"><a href="index.html" class="header__page-link">Home</a></li>
+                            <li class="header__page-item"><a href="index.html" class="header__page-link">Bravo</a></li>
+                            <li class="header__page-item"><a href="index.html" class="header__page-link">Charlie</a></li>
+                            <li class="header__page-item"><a href="index.html" class="header__page-link">Delta</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div>   
+                <div class="hero"></div>  
+                <main class="main-content">
+                    
+
+                    <header class="deck">
+                        <div class="container">
+                            <h1 class="deck--title">Commodo Tortor Tristique</h1>
+                            <p class="deck--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non tortor nec velit interdum sagittis. Nullam sollicitudin eu metus sit amet pellentesque. Donec ultrices vitae augue ut dignissim.</p>
+                        </div>
+                    </header>
+
+                    <section class="section-one">
+                        <div class="container">
+                            
+                        </div>
+                    </section>
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="content-box content-left">
+                                <h2>Left Heading</h2>
+                                <p>Fusce vehicula orci ac ornare mollis. Nulla malesuada felis nec lacinia consequat. In sagittis eros eu tellus auctor, a ultricies metus pellentesque.</p>
+                            </div>
+                            <div class="content-box content-center">
+                                <h2>Center Heading</h2>
+                                <p>Quisque malesuada interdum augue vitae rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus placerat risus pharetra blandit volutpat.</p>
+                            </div>
+                            <div class="content-box content-right">
+                                <h2>Right Heading</h2>
+                                <p>Vivamus quam dolor, eleifend vel tempor ut, consectetur ut lacus. In facilisis posuere interdum. Vivamus sed lorem in nunc consequat laoreet.</p>
+                            </div>
+                        </div>
+                        
+                        <p class="para-2">Vivamus mattis, augue sit amet eleifend finibus, ligula tellus posuere nulla, et egestas augue nibh in mi. Integer malesuada massa massa, et condimentum quam egestas eget. Nullam leo magna, fermentum vitae tristique eget, pharetra vel ante. Vestibulum rhoncus pretium nisl, a porttitor nisi porta vitae. Aenean id diam lacus. In vel erat sit amet velit bibendum mattis. Donec ac semper odio, sit amet accumsan magna. Etiam sodales a massa varius ultrices. </p>
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                            <label for="address">Address</label>
+                            <input type="text" id="address">
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+                            <label for="message">Message</label>
+                            <textarea id="message"></textarea>
+                            <label for="ts&cs"><input type="checkbox" id="ts&cs" required="1"> Have you read and accepted the terms and conditions?</label>
+                            <input type="submit" value="Submit!">
+                        </form>
+                    </div>   
+                </main> 
+                
+            </div>
+            
+            <footer class="footer">
+                <div class="container">
+                    Copyright &copy; 2016 Cameron Thomson. All rights reserved.
+                </div>
+            </footer>
+        </div>
+        <script>
+            window.onscroll = function(e) {
+                var pos;
+                pos = (document.body.scrollTop < 90 ) ?  (90 - document.body.scrollTop) + 'px' : '0px';
+                document.getElementById('navigation').style.top = pos;
+                console.log('scrolling')
+            }   
+        </script>
+    </body>
+</html>

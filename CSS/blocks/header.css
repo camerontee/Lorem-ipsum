@@ -1,0 +1,46 @@
+.header {
+  padding: 20px 0px 20px 20px;
+  background-color: var(--white);
+  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__logo {
+  font-size: 50px;
+  font-family: 'Baloo Tamma', cursive;
+  display: inline;
+}
+
+.header__logo:hover {
+  filter: brightness(120%);
+}
+
+.header__logo > a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+.header__navigation {
+  float: right;
+}
+
+.header__page-list {
+}
+
+.header__page-item {
+  display: inline-block;
+}
+
+.header__page-link {
+  font-size: 25px;
+  display: block;
+  text-decoration: none;
+  padding: 16px 16px;
+}
+
+.header__page-link:hover {
+  background-color: #999999;
+}

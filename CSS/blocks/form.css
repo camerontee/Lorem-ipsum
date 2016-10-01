@@ -1,0 +1,40 @@
+form {
+  display: inline-block;
+  margin: 30px auto 0px auto;
+  border: 2px solid #2C5662;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+label, input, textarea {
+  display: block;
+  text-align: left;
+  width: 300px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+input[type=submit], [type=checkbox] {
+  width: initial;
+}
+
+label[for="ts&cs"] {
+  margin-bottom: 25px;
+}
+
+input[id="ts&cs"] {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+}
