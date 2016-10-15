@@ -5,6 +5,7 @@ var jeet = require('jeet');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-Sync');
 var watch = require('gulp-watch');
+var surge = require('gulp-surge');
 
 gulp.task('browser-sync', function() {
   browserSync.init({
@@ -23,6 +24,13 @@ gulp.task('stylus', function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('deploy', function() {
+  return surge({
+    project: './dist',
+    domain: 'camerontee.lorem-ipsum.surge.sh'
+  })
 });
 
 gulp.task('watch', function() {
