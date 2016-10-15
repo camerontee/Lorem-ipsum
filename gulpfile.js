@@ -4,6 +4,7 @@ var nib = require('nib');
 var jeet = require('jeet');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-Sync');
+var watch = require('gulp-watch');
 
 gulp.task('browser-sync', function() {
   browserSync.init({
@@ -24,4 +25,10 @@ gulp.task('stylus', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['browser-sync', 'stylus']);
+gulp.task('watch', function() {
+  watch('./src/stylesheets/**/*.styl', function() {
+    return gulp.start('stylus');
+  });
+});
+
+gulp.task('default', ['browser-sync', 'stylus', 'watch']);
