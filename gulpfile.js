@@ -26,7 +26,7 @@ gulp.task('stylus', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.build('build', function() {
+gulp.task('build', function() {
   gulp.src('./src/stylesheets/styles.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({
