@@ -26,6 +26,16 @@ gulp.task('stylus', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.build('build', function() {
+  gulp.src('./src/stylesheets/styles.styl')
+    .pipe(sourcemaps.init())
+    .pipe(stylus({
+      use: [nib(), jeet()]
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./dist/css'));
+})
+
 gulp.task('deploy', function() {
   return surge({
     project: './dist',
